@@ -1,10 +1,11 @@
 import { Outlet } from "react-router";
+import NavbarComponent from "../components/navbar";
 
 export default function RootPage() {
   return (
-    <div>
-      <h1>Hello world </h1>
+    <>
+      <NavbarComponent />
       <Outlet />
-    </div>
+    </>
   );
 }
