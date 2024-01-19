@@ -10,14 +10,21 @@ export default function RootPage() {
       <NavbarComponent />
       <Flex>
         {/* Sidebar */}
-        <Box w="250px" h="100vh">
-          Sidebar Content
+        <Box px={10} h="100vh" className="hidden lg:block">
+          <Flex direction="column" p="4" fontWeight={"semibold"}>
+            <ChakraLink as={ReactRouterLink} to="/" mb="4">
+              Home
+            </ChakraLink>
+            <ChakraLink as={ReactRouterLink} to="/dashboard" mb="4">
+              Dashboard
+            </ChakraLink>
+            {/* Add more sidebar links as needed */}
+          </Flex>
         </Box>
 
         {/* Main Content */}
-        <Box p="4">
-          {/* Isi konten disini */}
-          Main Content
+        <Box flex="1" p="4">
+          <Outlet />
         </Box>
       </Flex>
     </>
