@@ -7,7 +7,7 @@ export default function NavbarComponent() {
   return (
     <>
       <div class="h-10 bg-gradient-to-r from-purple-500 to-pink-500 flex justify-center items-center">
-        <Text fontWeight={"semibold"} fontSize={13} color={"white"}>
+        <Text fontSize={13} color={"white"}>
           Sebuah platform manajemen jaringan yang dirancang dengan inspirasi 💎{" "}
           {"  "}
           <Button
@@ -22,8 +22,12 @@ export default function NavbarComponent() {
         </Text>
       </div>
       <Box
+        boxShadow={"xs"}
+        bg={colorMode !== "light" ? "gray.800" : "white"}
+        position={"sticky"}
+        top={0}
         px={20}
-        py={5}
+        py={1}
         display={"flex"}
         justifyContent={"space-between"}
         flexDirection={"row"}
@@ -33,12 +37,11 @@ export default function NavbarComponent() {
           <img className="w-16" src={Logo} alt="logo-image" />
           <Heading>mikanya</Heading>
         </span>
-        <div>
-          <a href="/login">Terminal</a>
-          <a href="/register">Register</a>
+        <div className="space-x-3">
           <Button onClick={toggleColorMode}>
             {colorMode !== "light" ? <CiLight /> : <CiDark />}
           </Button>
+          <Button>Logout</Button>
         </div>
       </Box>
     </>
