@@ -8,6 +8,7 @@ import LoginPage from "./pages/auth/login";
 import theme from "./utils/chakra/theme";
 import DashboardPage from "./pages/dashboard";
 import SpeedtestPage from "./pages/speedtest";
+import SessionSetting from "./pages/session-setting";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "speedtest",
         element: <SpeedtestPage />,
+      },
+      {
+        path: "session-setting",
+        element: <SessionSetting />,
       },
     ],
   },
