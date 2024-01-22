@@ -36,6 +36,7 @@ export default function NavbarComponent() {
         justifyContent={"space-between"}
         flexDirection={"row"}
         alignItems={"center"}
+        zIndex={1}
       >
         <span className="flex flex-row  justify-center items-center">
           <img className="w-16" src={Logo} alt="logo-image" />
