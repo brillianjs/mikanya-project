@@ -24,7 +24,7 @@ const ProfileEdit = () => {
         <form action="" className="flex flex-col gap-4">
           {/* <Heading fontSize={20}>Profile Edit</Heading> */}
           <FormControl id="first-name" isRequired>
-            <FormLabel>First name</FormLabel>
+            <FormLabel>Username</FormLabel>
             <Input placeholder=" " />
           </FormControl>
           <FormControl id="password" isRequired>
