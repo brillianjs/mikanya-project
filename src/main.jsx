@@ -9,6 +9,7 @@ import theme from "./utils/chakra/theme";
 import DashboardPage from "./pages/dashboard";
 import SpeedtestPage from "./pages/speedtest";
 import SessionSetting from "./pages/session-setting";
+import AddLogoPage from "./pages/add-logo";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "session-setting",
         element: <SessionSetting />,
+      },
+      {
+        path: "add-logo",
+        element: <AddLogoPage />,
       },
     ],
   },
