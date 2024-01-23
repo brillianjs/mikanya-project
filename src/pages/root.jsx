@@ -19,6 +19,9 @@ export default function RootPage() {
               <ChakraLink as={ReactRouterLink} to="/dashboard" mb="4">
                 Dashboard
               </ChakraLink>
+              <ChakraLink as={ReactRouterLink} to="/add-logo" mb="4">
+                Add Logo
+              </ChakraLink>
               <ChakraLink as={ReactRouterLink} to="/session-setting" mb="4">
                 Pengaturan Sesi
               </ChakraLink>
